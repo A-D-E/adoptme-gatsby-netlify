@@ -1,4 +1,6 @@
 import CMS from 'netlify-cms-app'
+import { de } from "netlify-cms-locales";
+
 import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
 
@@ -14,3 +16,5 @@ CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
+
+CMS.registerLocale("de", de);
